@@ -1,6 +1,6 @@
-# cloud_kit_example
+# flutter_cloud_kit_example
 
-Demonstrates how to use the cloud_kit plugin.
+Demonstrates how to use the flutter_cloud_kit plugin.
 
 ## Getting Started
 

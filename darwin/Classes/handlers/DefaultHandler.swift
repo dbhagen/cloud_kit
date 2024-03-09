@@ -1,8 +1,8 @@
 //
 //  DefaultHandler.swift
-//  cloud_kit
+//  flutter_cloud_kit
 //
-//  Created by Manuel on 07.04.23.
+//  Created by Manuel on 07.04.23. Refactored by Daniel on 2024-03-09.
 //
 
 class DefaultHandler: CommandHandler {

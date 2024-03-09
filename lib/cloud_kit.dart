@@ -20,12 +20,12 @@ class CloudKit {
   /// The key need to be unique.
   /// Returns a boolean [bool] with true if the save was successfully.
   Future<bool> save(String key, String value) async {
-    if (!Platform.isIOS) {
-      return false;
+    if (!Platform.isIOS || !Platform.isMacOS) {
+      throw UnimplementedError('CloudKit is only available on iOS and macOS');
     }
 
     if (key.length == 0 || value.length == 0) {
-      return false;
+      throw ArgumentError('Key and value can not be empty');
     }
 
     bool status = await _channel.invokeMethod('SAVE_VALUE',
@@ -39,12 +39,12 @@ class CloudKit {
   /// Returns a string [string] with the saved value.
   /// This can be null if the key was not found.
   Future<String?> get(String key) async {
-    if (!Platform.isIOS) {
-      return null;
+    if (!Platform.isIOS || !Platform.isMacOS) {
+      throw UnimplementedError('CloudKit is only available on iOS and macOS');
     }
 
     if (key.length == 0) {
-      return null;
+      throw ArgumentError('Key can not be empty');
     }
 
     List<dynamic> records = await (_channel
@@ -59,12 +59,12 @@ class CloudKit {
 
   /// Delete a entry from CloudKit using the key.
   Future<bool> delete(String key) async {
-    if (!Platform.isIOS) {
-      return false;
+    if (!Platform.isIOS || !Platform.isMacOS) {
+      throw UnimplementedError('CloudKit is only available on iOS and macOS');
     }
 
     if (key.length == 0) {
-      return false;
+      throw ArgumentError('Key can not be empty');
     }
 
     bool success = await _channel.invokeMethod('DELETE_VALUE', {
@@ -78,8 +78,8 @@ class CloudKit {
 
   /// Deletes the entire user database.
   Future<bool> clearDatabase() async {
-    if (!Platform.isIOS) {
-      return false;
+    if (!Platform.isIOS || !Platform.isMacOS) {
+      throw UnimplementedError('CloudKit is only available on iOS and macOS');
     }
 
     bool success = await _channel
@@ -93,7 +93,7 @@ class CloudKit {
   /// This is useful to check first if the user is logged in
   /// and then trying to save data to the users iCloud
   Future<CloudKitAccountStatus> getAccountStatus() async {
-    if (!Platform.isIOS) {
+    if (!Platform.isIOS || !Platform.isMacOS) {
       return CloudKitAccountStatus.notSupported;
     }
 

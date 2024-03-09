@@ -1,10 +1,10 @@
-name: cloud_kit
-description: CloudKit can sync settings over multiple iOS devices without extra sign in.
-version: 1.2.0
-homepage: https://github.com/Tutorialwork/cloud_kit
+name: flutter_cloud_kit
+description: Flutter CloudKit can sync settings over multiple iOS and macOS devices without extra sign in, but adds reactivity and callbacks.
+version: 1.0.0
+homepage: https://github.com/dbhagen/flutter_cloud_kit
 
 environment:
-  sdk: '>=2.17.0 <3.0.0'
+  sdk: ">=2.17.0 <3.0.0"
   flutter: ">=1.20.0"
 
 dependencies:
@@ -26,11 +26,12 @@ flutter:
   # adding or updating assets for this project.
   plugin:
     platforms:
-      android:
-        package: dev.tutorialwork.cloud_kit
-        pluginClass: CloudKitPlugin
+      macos:
+        pluginClass: FlutterCloudKitPlugin
+        sharedDarwinSource: true
       ios:
-        pluginClass: CloudKitPlugin
+        pluginClass: FlutterCloudKitPlugin
+        sharedDarwinSource: true
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
