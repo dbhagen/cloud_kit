@@ -7,12 +7,12 @@ import 'types/CloudKitAccountStatus.dart';
 export 'types/CloudKitAccountStatus.dart';
 
 /// A Wrapper for CloudKit
-class CloudKit {
+class FlutterCloudKit {
   static const MethodChannel _channel = const MethodChannel('cloud_kit');
 
   String _containerId = '';
 
-  CloudKit(String containerIdentifier) {
+  FlutterCloudKit(String containerIdentifier) {
     _containerId = containerIdentifier;
   }
 

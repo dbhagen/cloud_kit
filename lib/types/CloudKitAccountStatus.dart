@@ -1,4 +1,4 @@
-enum CloudKitAccountStatus {
+enum FlutterCloudKitAccountStatus {
   /// CloudKit can’t determine the status of the user’s iCloud account.
   couldNotDetermine(0),
 
@@ -14,6 +14,6 @@ enum CloudKitAccountStatus {
   /// Not possible to determine status because the device is not running iOS
   notSupported(99);
 
-  const CloudKitAccountStatus(this.value);
+  const FlutterCloudKitAccountStatus(this.value);
   final num value;
 }

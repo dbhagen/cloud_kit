@@ -14,8 +14,8 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   TextEditingController key = TextEditingController();
   TextEditingController value = TextEditingController();
-  CloudKit cloudKit = CloudKit("iCloud.dev.tutorialwork.cloudkitExample");
-  CloudKitAccountStatus? accountStatus;
+  FlutterCloudKit cloudKit = FlutterCloudKit("iCloud.dev.tutorialwork.cloudkitExample");
+  FlutterCloudKitAccountStatus? accountStatus;
 
   @override
   Widget build(BuildContext context) {

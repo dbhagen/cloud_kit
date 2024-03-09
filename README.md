@@ -2,20 +2,20 @@
     <img src="https://raw.githubusercontent.com/Tutorialwork/cloud_kit/main/images/logo.png" height="200">
 </div>
 
-# CloudKit
+# Flutter CloudKit
 
-CloudKit is a simple Flutter package to access on iOS devices the iCloud using the Apple CloudKit Api.
+Flutter CloudKit is a simple Flutter package to access on iOS devices the iCloud using the Apple CloudKit Api.
 You can save with the package key value pairs in the private database of the users iCloud.
 
 # 📝 Usage
 
-Just create a new instance of the CloudKit class with your container id of your created CloudKit container.
+Just create a new instance of the FlutterCloudKit class with your container id of your created CloudKit container.
 And then you are able, if the user is signed in into his iCloud account, to save key value pairs and delete it.
 
-- Instantiate CloudKit instance to save and get a value.
+- Instantiate Flutter CloudKit instance to save and get a value.
 
 ```dart
-CloudKit cloudKit = CloudKit('iCloud.dev.tutorialwork.cloudkitExample'); // Enter your container id
+CloudKit cloudKit = FlutterCloudKit('iCloud.dev.example.cloudkitExample'); // Enter your container id
 cloudKit.save('key', 'value');
 cloudKit.get('key');
 cloudKit.delete('key');
@@ -26,14 +26,14 @@ cloudKit.clearDatabase();
 
 ```dart
 CloudKitAccountStatus accountStatus = await cloudKit.getAccountStatus();
-if (accountStatus == CloudKitAccountStatus.available) {
+if (accountStatus == FlutterCloudKitAccountStatus.available) {
   // User is logged in with iCloud
 }
 ```
 
 # 💻 Setup
 
-- Add the iCloud capability to your XCode project and tick all the three options and create with the plus icon a new CloudKit container and select it.
+- Add the iCloud capability to your XCode project and tick all the three options and create with the plus icon a new FlutterCloudKit container and select it.
 
 <div>
     <img src="https://raw.githubusercontent.com/Tutorialwork/cloud_kit/main/images/step1.png" height="300">

@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.version          = '0.0.1'
   s.summary          = 'A flutter plugin for Apple CloudKit'
   s.description      = <<-DESC
-A flutter plugin for Apple CloudKit on iOS and macOS platforms. Building on other plugins, this plugin adds more reactive functionality and features as a CloudKit plugin.
+A flutter plugin for Apple CloudKit on iOS and macOS platforms. Building on other plugins, this plugin adds more reactive functionality and features as a Flutter CloudKit plugin.
                        DESC
   s.homepage         = 'http://danielhagen.com'
   s.license          = { :file => '../LICENSE' }
