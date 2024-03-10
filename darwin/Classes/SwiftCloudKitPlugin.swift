@@ -2,10 +2,10 @@ import Flutter
 import UIKit
 import CloudKit
 
-public class SwiftCloudKitPlugin: NSObject, FlutterPlugin {
+public class SwiftFlutterCloudKitPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
       let channel = FlutterMethodChannel(name: "flutter_cloud_kit", binaryMessenger: registrar.messenger())
-      let instance = SwiftCloudKitPlugin()
+      let instance = SwiftFlutterCloudKitPlugin()
       registrar.addMethodCallDelegate(instance, channel: channel)
   }
 
