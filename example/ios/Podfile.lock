@@ -1,22 +1,22 @@
 PODS:
   - Flutter (1.0.0)
-  - flutter_cloud_kit (0.0.1):
+  - flutter_async_cloud_kit (0.0.1):
     - Flutter
     - FlutterMacOS
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
-  - flutter_cloud_kit (from `.symlinks/plugins/flutter_cloud_kit/darwin`)
+  - flutter_async_cloud_kit (from `.symlinks/plugins/flutter_async_cloud_kit/darwin`)
 
 EXTERNAL SOURCES:
   Flutter:
     :path: Flutter
-  flutter_cloud_kit:
-    :path: ".symlinks/plugins/flutter_cloud_kit/darwin"
+  flutter_async_cloud_kit:
+    :path: ".symlinks/plugins/flutter_async_cloud_kit/darwin"
 
 SPEC CHECKSUMS:
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
-  flutter_cloud_kit: cb0ce43ab77b38192b0c6f14bbba0ab96c12f3f1
+  flutter_async_cloud_kit: cb0ce43ab77b38192b0c6f14bbba0ab96c12f3f1
 
 PODFILE CHECKSUM: ef19549a9bc3046e7bb7d2fab4d021637c0c58a3
 

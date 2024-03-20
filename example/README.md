@@ -1,6 +1,6 @@
-# flutter_cloud_kit_example
+# flutter_async_cloud_kit_example
 
-Demonstrates how to use the flutter_cloud_kit plugin.
+Demonstrates how to use the flutter_async_cloud_kit plugin.
 
 ## Getting Started
 

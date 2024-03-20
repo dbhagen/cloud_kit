@@ -62,7 +62,7 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_cloud_kit:
+  flutter_async_cloud_kit:
     dependency: "direct main"
     description:
       path: ".."

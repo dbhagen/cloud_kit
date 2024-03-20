@@ -1,9 +1,9 @@
 #
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html.
-# Run `pod lib lint flutter_cloud_kit.podspec` to validate before publishing.
+# Run `pod lib lint flutter_async_cloud_kit.podspec` to validate before publishing.
 #
 Pod::Spec.new do |spec|
-  spec.name             = 'flutter_cloud_kit'
+  spec.name             = 'flutter_async_cloud_kit'
   spec.version          = '0.0.1'
   spec.summary          = 'A flutter plugin for Apple CloudKit'
   spec.license          =  { :type => 'GPL 3.0', :file => '../LICENSE' }
@@ -12,7 +12,7 @@ A flutter plugin for Apple CloudKit on iOS and macOS platforms. Building on othe
                        DESC
   spec.homepage         = 'http://danielhagen.com'
   spec.author           = { 'Daniel Hagen' => 'flutter@danielhagen.com' }
-  spec.source           = { :git => 'https://github.com/dbhagen/flutter_cloud_kit.git', :tag => spec.version.to_s }
+  spec.source           = { :git => 'https://github.com/dbhagen/flutter_async_cloud_kit.git', :tag => spec.version.to_s }
   spec.source_files = 'Classes/**/*'
   spec.ios.dependency 'Flutter'
   spec.osx.dependency 'FlutterMacOS'
